@@ -1,5 +1,7 @@
 # Photography Portfolio [See Live](https://forresttindall.com/)
 
+![_DSC6969](https://github.com/user-attachments/assets/33e9b942-bf35-4cfb-8f64-40933050e41c)
+
 Welcome to my Photography Portfolio! This project showcases my work as a commercial photographer, featuring various categories of photography, including commercial and outdoor shots. The portfolio is built using React and includes a responsive design for optimal viewing on all devices.
 
 ## Table of Contents
