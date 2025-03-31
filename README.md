@@ -63,7 +63,7 @@ For any questions or inquiries, feel free to reach out:
 
 - **Email**: forrest@forresttindall.com
 - **Instagram**: [@forrest.tindall](https://www.instagram.com/forresttindall)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/forrest-tindall)
+- **LinkedIn**: [forrest-tindall](https://www.linkedin.com/in/forrest-tindall)
 
 
 ---
