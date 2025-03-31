@@ -1,0 +1,176 @@
+/* Remove the html, body styles and just keep the scrollbar-gutter */
+/* html {
+  scrollbar-gutter: stable;
+} */
+
+.navigation {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 0px;
+  z-index: 1000;
+  background-color: rgba(55, 55, 55, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  width: auto; /* Changed from fit-content */
+  margin: 0 auto;
+}
+
+.mobile-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.menu-toggle, .close-menu {
+  background: none;
+  border: none;
+  color: var(--nav-text-color);
+  cursor: pointer;
+  padding: 5px;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  background-color: inherit;
+  font-size: 0.9rem;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-links .home-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.nav-links .home-link:hover {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Hide mobile home link on desktop */
+.mobile-nav .home-link {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .close-menu {
+    display: block;
+  }
+
+  /* Hide desktop home link on mobile */
+  .desktop-home {
+    display: none !important;
+  }
+
+  /* Show mobile home link */
+  .mobile-nav .home-link {
+    display: flex;
+  }
+
+  .navigation {
+    width: 100%;
+    min-width: unset; /* Remove min-width on mobile */
+    top: 0;
+    transform: none;
+    left: 0;
+    border-radius: 0;
+    background-color: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    transition: right 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-link {
+    display: flex !important;
+    color: var(--nav-text-color) !important;
+  }
+
+  .menu-toggle:hover,
+  .close-menu:hover {
+    transform: scale(1.1);
+  }
+
+  .nav-links .home-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: rgba(10, 10, 10, 0.9);
+    transition: all 0.3s ease;
+  }
+}
+
+.mobile-nav .home-link {
+  display: none; /* Hide home link in mobile menu */
+}
+
+.nav-links.open .desktop-home {
+  display: none; /* Hide home link in mobile menu when open */
+} 

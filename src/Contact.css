@@ -1,0 +1,117 @@
+.contact-container {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-color: #909090;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+}
+
+.glass {
+ 
+}
+
+.contact-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.contact-header p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: black;
+  text-align: left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  background-color: #666;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  color: white;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+textarea.contact-input {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #333;
+}
+
+.submit-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.status-message {
+  text-align: center;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.status-message.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-message.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 60px 15px;
+  }
+  
+  .contact-content {
+    padding: 15px;
+  }
+}
