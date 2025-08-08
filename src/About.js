@@ -48,7 +48,7 @@ const About = () => {
             My work has been featured in Popular Mechanics Magazine, and I've collaborated with brands like Worksharp, Schrade Knives, CRKT, TinCup Whiskey, and Sawyer Outdoors.
           </p>
           <p>
-            Based in the mountains of Boise County, Idaho, I travel often. The best part of this work is being forced to slow down, to see places differently, and to translate that perspective into something tangible. Outside of photography, I spend my time fly fishing, hunting, programming, and exploring through wardriving.
+            Based in Boise, Idaho, I travel often. The best part of this work is being forced to slow down, to see places differently, and to translate that perspective into something tangible. Outside of photography, I spend my time fly fishing, programming, art and exploring through wardriving.
           </p>
           <p>Let's build something real.</p>
         </div>
