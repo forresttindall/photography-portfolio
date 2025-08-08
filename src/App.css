@@ -7,6 +7,12 @@
   font-family: Geist mono;
 }
 
+/* Global image constraints to prevent overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .App {
   background-color: white;
   min-height: 100vh;

@@ -11,9 +11,10 @@
   
   .pswp-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 0;
     width: 100%;
+    max-width: 100%;
   }
   
   .gallery-item {
@@ -26,6 +27,7 @@
   
   .gallery-item img {
     width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
@@ -57,6 +59,17 @@
   @media (max-width: 600px) {
     .pswp-gallery {
       grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .pswp-gallery {
+      grid-template-columns: 1fr;
+    }
+    
+    .gallery-item img {
+      min-width: 0;
+      max-width: 100%;
     }
   }
   
