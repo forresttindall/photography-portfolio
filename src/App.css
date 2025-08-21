@@ -9,8 +9,21 @@
 
 /* Global image constraints to prevent overflow */
 img {
-  max-width: 100%;
+  max-width: 100% !important;
   height: auto;
+}
+
+/* Additional mobile constraints */
+@media (max-width: 600px) {
+  * {
+    max-width: 100vw !important;
+  }
+  
+  img, picture {
+    max-width: 100vw !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
 }
 
 .App {
@@ -81,4 +94,150 @@ img {
 * {
   scrollbar-width: thin;  /* Make scrollbar thinner */
   scrollbar-color: rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.3);  /* thumb and track colors */
+}
+
+/* ===== GLOBAL GALLERY STYLES ===== */
+/* Portfolio page layout */
+.portfolio-page {
+  padding-top: 0px;
+  min-height: 100vh;
+  background-color: white;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Gallery container */
+.gallery-container {
+  width: 100%;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* PhotoSwipe gallery grid */
+.pswp-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gallery items */
+.gallery-item {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Gallery images */
+.gallery-item img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  cursor: pointer;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Large screens (2000px+) */
+@media (min-width: 2000px) {
+  .pswp-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Medium-large screens (1500px and below) */
+@media (max-width: 1500px) {
+  .pswp-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium screens (1000px and below) */
+@media (max-width: 1000px) {
+  .pswp-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens (768px and below) */
+@media (max-width: 768px) {
+  .pswp-gallery {
+    grid-template-columns: 1fr;
+    width: 100vw;
+    max-width: 100vw;
+  }
+  
+  .gallery-container {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .gallery-item {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  
+  .gallery-item img {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    object-fit: cover;
+  }
+}
+
+/* Extra small screens (480px and below) */
+@media (max-width: 480px) {
+  .portfolio-page {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .pswp-gallery {
+    grid-template-columns: 1fr;
+    width: 100vw;
+    max-width: 100vw;
+    gap: 0;
+  }
+  
+  .gallery-container {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .gallery-item {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gallery-item img {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    height: auto !important;
+    object-fit: cover;
+    display: block;
+  }
 }

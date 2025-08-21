@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { House, List, X } from "@phosphor-icons/react";
+import { List, X, House } from "@phosphor-icons/react";
 import './Navigation.css';
 
 const Navigation = ({ textColor = 'white' }) => {
@@ -13,7 +13,7 @@ const Navigation = ({ textColor = 'white' }) => {
   return (
     <nav className="navigation" style={{ '--nav-text-color': textColor }}>
       <div className="mobile-nav">
-        <Link to="/" className="home-link desktop-home">
+        <Link to="/" className="home-link desktop-home" onClick={() => setIsMenuOpen(false)}>
           <House size={24} weight="light" />
         </Link>
         <button className="menu-toggle" onClick={toggleMenu}>
@@ -24,13 +24,14 @@ const Navigation = ({ textColor = 'white' }) => {
         <button className="close-menu" onClick={toggleMenu}>
           <X size={24} weight="light" />
         </button>
-        <Link to="/" className="home-link desktop-home">
+        <Link to="/" className="home-link desktop-home" onClick={() => setIsMenuOpen(false)}>
           <House size={24} weight="light" />
         </Link>
         <Link to="/commercial" onClick={() => setIsMenuOpen(false)}>Commercial</Link>
+        <Link to="/film" onClick={() => setIsMenuOpen(false)}>Film</Link>
         <Link to="/outdoor" onClick={() => setIsMenuOpen(false)}>Outdoor</Link>
         <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
-        <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+        <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Blog</Link>
       </div>
     </nav>
   );

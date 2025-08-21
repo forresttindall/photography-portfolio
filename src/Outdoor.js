@@ -63,10 +63,9 @@ const Outdoor = () => {
       img.appendChild(source);
 
       const imgElement = document.createElement('img');
-      imgElement.src = imagePath(image.src); // Fallback to original JPG
+      imgElement.src = imagePath(image.src);
       imgElement.alt = image.alt;
       imgElement.loading = 'lazy';
-      imgElement.srcSet = `${imagePath(image.src)} 1x, ${imagePath(image.src)} 2x`;
       
       img.appendChild(imgElement);
       figure.appendChild(img);

@@ -4,7 +4,9 @@ import HomePage from './HomePage.js';
 import Commercial from './Commercial.js';
 import Outdoor from './Outdoor.js';
 import About from './About.js';
-import Contact from './Contact.js';
+import Blog from './Blog.js';
+import Film from './Film.js';
+
 import './Commercial.css';
 import './Outdoor.css';
 import './App.css';
@@ -18,8 +20,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/outdoor" element={<Outdoor />} />
+          <Route path="/film" element={<Film />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Blog />} />
         </Routes>
       </div>
     </Router>

@@ -1,0 +1,232 @@
+.blog-container {
+  min-height: 100vh;
+  background-color: #909090;
+  padding: 80px 20px 40px;
+}
+
+.blog-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 80px;
+  padding: 40px 20px;
+}
+
+.blog-header h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+
+.blog-header p {
+  font-size: 1.1rem;
+  color: black;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.blog-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.blog-post {
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.post-image:hover img {
+  transform: scale(1.02);
+}
+
+.post-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.post-meta {
+  margin-bottom: 15px;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: black;
+  opacity: 0.7;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.post-tags {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.medium-tag {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.medium-tag.film {
+  background-color: #000;
+  color: #fff;
+}
+
+.medium-tag.digital {
+  background-color: #666;
+  color: #fff;
+}
+
+.film-stock-tag {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #999;
+  border-radius: 2px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.post-content h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.post-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: black;
+  opacity: 0.9;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-footer {
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.blog-footer p {
+  font-size: 0.9rem;
+  color: black;
+  opacity: 0.6;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Tablet styles */
+@media (max-width: 968px) {
+  .blog-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .post-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .post-content p {
+    font-size: 1rem;
+  }
+
+  .blog-post {
+    margin-bottom: 80px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .blog-container {
+    padding: 60px 15px 30px;
+  }
+
+  .blog-header {
+    margin-bottom: 50px;
+    padding: 20px 0;
+  }
+
+  .blog-header h1 {
+    font-size: 2rem;
+  }
+
+  .blog-header p {
+    font-size: 1rem;
+  }
+
+  .blog-post {
+    margin-bottom: 60px;
+    padding: 0 10px;
+  }
+
+  .post-image {
+    margin-bottom: 25px;
+  }
+
+  .post-content {
+    padding: 0 10px;
+  }
+
+  .post-date {
+    font-size: 0.8rem;
+  }
+
+  .post-tags {
+    gap: 6px;
+  }
+
+  .medium-tag,
+  .film-stock-tag {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+  }
+
+  .post-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .post-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .blog-footer {
+    padding: 40px 0;
+  }
+}
