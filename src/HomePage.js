@@ -10,6 +10,11 @@ const categories = [
     textColor: 'white'
   },
   {
+    name: 'Film',
+    image: '5.jpg',
+    textColor: 'white',
+  },
+  {
     name: 'Outdoor',
     image: '_DSC1672-2.jpg',
     textColor: 'white'
@@ -18,6 +23,11 @@ const categories = [
     name: 'Commercial',
     image: '_DSC9182.jpg',
     textColor: 'white'
+  },
+  {
+    name: 'Film',
+    image: '1.jpg',
+    textColor: 'white',
   },
   {
     name: 'Outdoor',
