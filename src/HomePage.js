@@ -4,40 +4,37 @@ import './HomePage.css';
 import imagePath from './utils/imagePath';
 
 const categories = [
+    {
+    name: 'Film',
+    image: '14.jpg',
+    textColor: 'white',
+  },
   {
     name: 'Commercial',
     image: '_DSC6969.jpg',
     textColor: 'white'
   },
   {
-    name: 'Film',
-    image: '5.jpg',
-    textColor: 'white',
-  },
-  {
     name: 'Outdoor',
     image: '_DSC1672-2.jpg',
     textColor: 'white'
+  },
+
+  {
+    name: 'Film',
+    image: '5.jpg',
+    textColor: 'white',
   },
   {
     name: 'Commercial',
     image: '_DSC9182.jpg',
     textColor: 'white'
   },
-  {
-    name: 'Film',
-    image: '1.jpg',
-    textColor: 'white',
-  },
+
   {
     name: 'Outdoor',
-    image: '_DSC8090.jpg',
+    image: '_DSC9596.jpg',
     textColor: 'white'
-  },
-  {
-    name: 'Commercial',
-    image: '_DSC7999-4.jpg',
-    textColor: 'white',
   },
 ];
 
