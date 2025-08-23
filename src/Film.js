@@ -5,6 +5,7 @@ import './Outdoor.css';
 import imagePath from './utils/imagePath';
 
 const images = [
+  { id: 11, src: '14.jpg', alt: 'Outdoor 11' },
   { id: 1, src: '1.jpg', alt: 'Outdoor 1' },
   { id: 2, src: '3.jpg', alt: 'Outdoor 2' },
   { id: 3, src: '6.jpg', alt: 'Outdoor 3' },
@@ -17,14 +18,11 @@ const images = [
   { id: 12, src: '13.jpg', alt: 'Outdoor 12' },
   { id: 9, src: '2.jpg', alt: 'Outdoor 9' },
   { id: 10, src: '9.jpg', alt: 'Outdoor 10' },
-
-  
-  // { id: 11, src: '_DSC9957-6.jpg', alt: 'Outdoor 11' },
-  //{ id: 12, src: '_DSC2866-2.jpg', alt: 'Outdoor 12' },
-  //{ id: 13, src: '_DSC5325.jpg', alt: 'Outdoor 13' },
-  //{ id: 14, src: '_DSC9134-3.jpg', alt: 'Outdoor 14' },
-  //{ id: 15, src: '_DSC5892-4.jpg', alt: 'Outdoor 15' },
-  //{ id: 16, src: '_DSC5437-2.jpg', alt: 'Outdoor 16' },
+  { id: 12, src: '16.jpg', alt: 'Outdoor 12' },
+  { id: 13, src: '17.jpg', alt: 'Outdoor 13' },
+  { id: 14, src: '18.jpg', alt: 'Outdoor 14' },
+  { id: 15, src: '19.jpg', alt: 'Outdoor 15' },
+  { id: 16, src: '15.jpg', alt: 'Outdoor 16' },
   //{ id: 17, src: '_DSC2807-2.jpg', alt: 'Outdoor 17' },
   //{ id: 18, src: '_DSC2612.jpg', alt: 'Outdoor 18' },
   //{ id: 19, src: '_DSC2522.jpg', alt: 'Outdoor 19' },

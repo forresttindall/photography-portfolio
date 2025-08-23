@@ -19,8 +19,17 @@ const blogPosts = [
     image: '_DSC1298-2.jpg',
     title: '"Rich History"',
     date: '2025-08-6',
-    text: 'Landed in my temporary new "home" of Mountian Home, which is neither mountainous nor home. I have plenty of family here, and in this town the Tindall name means something, there are even 3 streets named Tindall. However i\'d rather no one know I was ever here.',
+    text: 'Just touched down in my temporary new “home” of Mountain Home, a place that is somehow neither mountainous nor much of a home. The family roots run deep here though; apparently the Tindall name is kind of a big deal. There are even three streets named after us, which is impressive until you realize I’d prefer nobody ever know I was actually here.',
     medium: 'digital'
+  },
+    {
+    id: 3,
+    image: '14.jpg',
+    title: 'If its good enough for Nolan',
+    date: '2025-08-23',
+    text: 'Scored a sweet deal on some bulk rolled Kodak Eastman Vision 3 250D cinema film from ebay, and have been shooting it since. There is something really special about how this film captures the warm golden hour while still capturing blue tones so nicely. its quickly becoming one of my favorites.',
+    medium: 'film',
+    filmStock: 'Kodak Vision 250D'
   },
  
 ].sort((a, b) => new Date(b.date) - new Date(a.date));
