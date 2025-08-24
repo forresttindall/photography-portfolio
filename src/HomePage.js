@@ -6,7 +6,7 @@ import imagePath from './utils/imagePath';
 const categories = [
     {
     name: 'Film',
-    image: '14.jpg',
+    image: '5.jpg',
     textColor: 'white',
   },
   {
@@ -22,7 +22,7 @@ const categories = [
 
   {
     name: 'Film',
-    image: '5.jpg',
+    image: '20.jpg',
     textColor: 'white',
   },
   {
