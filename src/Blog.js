@@ -29,7 +29,7 @@ const blogPosts = [
     date: '2025-08-23',
     text: 'Scored a sweet deal on some bulk rolled Kodak Eastman Vision 3 250D cinema film from ebay, and have been shooting it since. There is something really special about how this film captures the warm golden hour while still capturing blue tones so nicely. its quickly becoming one of my favorites.',
     medium: 'film',
-    filmStock: 'Kodak Vision 250D'
+    filmStock: 'Kodak Vision 3250D'
   },
  
 ].sort((a, b) => new Date(b.date) - new Date(a.date));

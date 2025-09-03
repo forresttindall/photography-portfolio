@@ -1,0 +1,109 @@
+/* ===== SHARED MASONRY LAYOUT STYLES ===== */
+
+/* Portfolio page layout */
+.portfolio-page {
+  padding-top: 0px;
+  min-height: 100vh;
+  background-color: white;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Masonry container */
+.masonry-container {
+  width: 100%;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* CSS Masonry Grid */
+.masonry-grid {
+  columns: 2; /* Default to 2 columns for vertical monitors */
+  column-gap: 0; /* No space between columns */
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Masonry items */
+.masonry-item {
+  break-inside: avoid;
+  margin: 0; /* No margin between items */
+  padding: 0; /* No padding */
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+
+/* Masonry images */
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  vertical-align: top;
+}
+
+/* Picture element for WebP support */
+.masonry-item picture {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Wide/big monitors (1400px+ width) */
+@media (min-width: 1400px) {
+  .masonry-grid {
+    columns: 3; /* 3 columns for wide monitors */
+    column-gap: 0;
+  }
+}
+
+/* Large screens but not ultra-wide (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .masonry-grid {
+    columns: 3;
+    column-gap: 0;
+  }
+}
+
+/* Medium screens (768px - 1199px) - vertical monitors */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .masonry-grid {
+    columns: 2; /* 2 columns for vertical/portrait monitors */
+    column-gap: 0;
+  }
+}
+
+/* Small screens (below 768px) */
+@media (max-width: 767px) {
+  .masonry-grid {
+    columns: 1; /* Single column for mobile */
+    column-gap: 0;
+  }
+}
+
+/* Remove any default spacing */
+.masonry-item,
+.masonry-item picture,
+.masonry-item img {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Ensure images load properly */
+.masonry-item img {
+  opacity: 1;
+  transition: none;
+}

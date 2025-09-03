@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
-import './Outdoor.css';
+
 import imagePath from './utils/imagePath';
 
 const images = [

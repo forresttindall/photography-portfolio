@@ -29,9 +29,9 @@ const Navigation = ({ textColor = 'white' }) => {
         </Link>
           <Link to="/film" onClick={() => setIsMenuOpen(false)}>Film</Link>
         <Link to="/commercial" onClick={() => setIsMenuOpen(false)}>Commercial</Link>
-        <Link to="/outdoor" onClick={() => setIsMenuOpen(false)}>Outdoor</Link>
+        <Link to="/other" onClick={() => setIsMenuOpen(false)}>Other</Link>
         <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
-        <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+        <Link to="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link>
       </div>
     </nav>
   );
