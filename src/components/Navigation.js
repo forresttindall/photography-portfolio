@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { List, X, House } from "@phosphor-icons/react";
 import './Navigation.css';
 
-const Navigation = ({ textColor = 'white' }) => {
+const Navigation = ({ textColor = 'white', iconColor = 'white' }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const toggleMenu = () => {
@@ -11,13 +11,16 @@ const Navigation = ({ textColor = 'white' }) => {
   };
   
   return (
-    <nav className="navigation" style={{ '--nav-text-color': textColor }}>
+    <nav className="navigation" style={{ 
+      '--nav-text-color': textColor,
+      '--nav-icon-color': iconColor
+    }}>
       <div className="mobile-nav">
         <Link to="/" className="home-link desktop-home" onClick={() => setIsMenuOpen(false)}>
-          <House size={24} weight="light" />
+          <House size={24} weight="light" style={{ color: iconColor }} />
         </Link>
         <button className="menu-toggle" onClick={toggleMenu}>
-          <List size={24} weight="light" />
+          <List size={24} weight="light" style={{ color: iconColor }} />
         </button>
       </div>
       <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>

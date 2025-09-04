@@ -8,33 +8,39 @@ const categories = [
     name: 'Film',
     image: '5.jpg',
     textColor: 'white',
+    iconColor: 'black', // Image 1 - black
   },
   {
     name: 'Commercial',
     image: '_DSC6969.jpg',
-    textColor: 'white'
+    textColor: 'white',
+    iconColor: 'white', // Image 2 - white
   },
   {
     name: 'Outdoor',
     image: '_DSC1672-2.jpg',
-    textColor: 'white'
+    textColor: 'white',
+    iconColor: 'black', // Image 3 - black
   },
 
   {
     name: 'Film',
     image: '20.jpg',
     textColor: 'white',
+    iconColor: 'white', // Image 4 - white
   },
   {
     name: 'Commercial',
     image: '_DSC9182.jpg',
-    textColor: 'white'
+    textColor: 'white',
+    iconColor: 'black', // Image 5 - black
   },
 
   {
     name: 'Outdoor',
     image: '_DSC9596.jpg',
-    textColor: 'white'
+    textColor: 'white',
+    iconColor: 'black', // Image 6 - black
   },
 ];
 
@@ -52,7 +58,10 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      <Navigation textColor={categories[currentIndex].textColor} />
+      <Navigation 
+        textColor={categories[currentIndex].textColor} 
+        iconColor={categories[currentIndex].iconColor}
+      />
       {categories.map((category, index) => (
         <div key={`${category.name}-${index}`} className={`category-slide ${index === currentIndex ? 'active' : ''}`}>
           <img 

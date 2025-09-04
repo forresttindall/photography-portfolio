@@ -28,7 +28,7 @@
 .menu-toggle, .close-menu {
   background: none;
   border: none;
-  color: var(--nav-text-color);
+  color: var(--nav-icon-color);
   cursor: pointer;
   padding: 5px;
   display: none;
@@ -64,7 +64,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition: all 0.3s ease;
 }
 
@@ -105,6 +104,7 @@
   /* Show mobile home link */
   .mobile-nav .home-link {
     display: flex;
+    color: var(--nav-icon-color) !important;
   }
 
   .navigation {
@@ -173,4 +173,4 @@
 
 .nav-links.open .desktop-home {
   display: none; /* Hide home link in mobile menu when open */
-} 
+}
