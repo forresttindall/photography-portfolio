@@ -33,7 +33,7 @@ const Navigation = ({ textColor = 'white' }) => {
         <Link to="/commercial" onClick={() => setIsMenuOpen(false)}>Commercial</Link>
         <Link to="/other" onClick={() => setIsMenuOpen(false)}>Other</Link>
         <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
-        <Link to="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link>
+        
         <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
       </div>
     </nav>
