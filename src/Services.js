@@ -39,7 +39,7 @@ const Services = () => {
           <div className="service-section">
             <h2>Film Portrait Sessions</h2>
             <p className="film-description">
-              (includes dev + scans, delivered as high-res files, with a limited artisanal feel)
+              (includes dev + scans, and editing delivered as high-res digital files)
             </p>
             <div className="pricing-options">
               <div className="pricing-option">
