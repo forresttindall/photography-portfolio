@@ -6,6 +6,7 @@ import Other from './Other.js';
 import About from './About.js';
 import Blog from './Blog.js';
 import Film from './Film.js';
+import Portraits from './Portraits.js'
 
 import './Commercial.css';
 
@@ -18,6 +19,7 @@ function App() {
       <Navigation />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/portraits" element={<Portraits />} />
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/other" element={<Other />} />
           <Route path="/film" element={<Film />} />
