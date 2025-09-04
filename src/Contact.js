@@ -87,6 +87,7 @@ const Contact = () => {
                 className="contact-input"
               >
                 <option value="" disabled>Select a submission type</option>
+                <option value="book">I'd like to book a portrait session</option>
                 <option value="more_info">I'd like more information about your services</option>
                 <option value="feedback">Feedback on my experience</option>
                 <option value="partnership">Partnership Inquiry</option>

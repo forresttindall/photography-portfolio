@@ -5,7 +5,7 @@ import Services from './Services.js';
 import Commercial from './Commercial.js';
 import Other from './Other.js';
 import About from './About.js';
-import Blog from './Blog.js';
+
 import Film from './Film.js';
 import Portraits from './Portraits.js'
 import Contact from './Contact.js'
