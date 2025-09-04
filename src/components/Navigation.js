@@ -27,8 +27,9 @@ const Navigation = ({ textColor = 'white' }) => {
         <Link to="/" className="home-link desktop-home" onClick={() => setIsMenuOpen(false)}>
           <House size={24} weight="light" />
         </Link>
+        <Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link>
         <Link to="/portraits" onClick={() => setIsMenuOpen(false)}>Portraits</Link>
-          <Link to="/film" onClick={() => setIsMenuOpen(false)}>Film</Link>
+        <Link to="/film" onClick={() => setIsMenuOpen(false)}>Film</Link>
         <Link to="/commercial" onClick={() => setIsMenuOpen(false)}>Commercial</Link>
         <Link to="/other" onClick={() => setIsMenuOpen(false)}>Other</Link>
         <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
