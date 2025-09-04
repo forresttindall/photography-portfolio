@@ -8,6 +8,7 @@ import About from './About.js';
 import Blog from './Blog.js';
 import Film from './Film.js';
 import Portraits from './Portraits.js'
+import Contact from './Contact.js'
 
 import './Commercial.css';
 import './Services.css';
@@ -28,6 +29,7 @@ function App() {
           <Route path="/film" element={<Film />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
