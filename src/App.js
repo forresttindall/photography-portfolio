@@ -5,7 +5,7 @@ import HomePage from './HomePage.js';
 import Commercial from './Commercial.js';
 import Other from './Other.js';
 import About from './About.js';
-
+import Blog from './Blog.js';
 import Film from './Film.js';
 
 import Contact from './Contact.js'
@@ -27,7 +27,7 @@ function App() {
           <Route path="/other" element={<Other />} />
           <Route path="/film" element={<Film />} />
           <Route path="/about" element={<About />} />
-         
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

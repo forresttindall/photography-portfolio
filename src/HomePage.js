@@ -25,7 +25,7 @@ const categories = [
 
   {
     name: 'Film',
-    image: 'cityofrocks.jpg',
+    image: 'arch.jpg',
     textColor: 'white',
     iconColor: 'white', // Image 4 - white
   },

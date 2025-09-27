@@ -28,7 +28,7 @@ const images = [
   { id: 22, src: 'jerrys.jpg', alt: 'Outdoor 22' },
   { id: 19, src: 'house.jpg', alt: 'Outdoor 19' },
   { id: 20, src: 'shack.jpg', alt: 'Outdoor 20' },
-  { id: 21, src: 'cityofrocks.jpg', alt: 'Outdoor 21' },
+  { id: 21, src: 'arch.jpg', alt: 'Outdoor 21' },
   
   //{ id: 23, src: '_DSC2110.jpg', alt: 'Outdoor 23' },
   //{ id: 24, src: '_DSC3998.jpg', alt: 'Outdoor 24' },
